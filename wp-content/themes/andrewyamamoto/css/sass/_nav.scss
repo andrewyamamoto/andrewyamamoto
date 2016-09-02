@@ -1,0 +1,43 @@
+.navbar{
+    border-radius: 0;
+    margin-bottom:100px;
+    background:none;
+    border:0;
+    #ay-navbar-collapse{
+        text-align:center;
+    }
+    .navbar-header{
+        display:block;
+        float:none;
+        text-align:center;
+    }
+    .navbar-nav{
+        float:none;
+        display:inline-block;
+        > li {
+            a{
+                display:inline;
+                color:$blue-logo;
+                font-size:16px;
+
+                &:hover{
+                    border-bottom:4px solid $blue-logo;
+                    color:lighten( $blue-logo , 10% );
+                }
+            }
+        }
+    }
+    .navbar-default{
+
+    }
+    .navbar-brand{
+        float:none;
+        text-align:center;
+        display:inline-block;
+        height:inherit;
+        margin-left:0 !important;
+        img{
+            float:none;
+        }
+    }
+}

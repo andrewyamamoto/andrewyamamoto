@@ -1,0 +1,22 @@
+[02-Sep-2016 03:44:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-intro.php:21
+Stack trace:
+#0 /srv/www/andrewyamamoto/htdocs/wp-includes/template.php(574): require()
+#1 /srv/www/andrewyamamoto/htdocs/wp-includes/template.php(531): load_template('/srv/www/andrew...', false)
+#2 /srv/www/andrewyamamoto/htdocs/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#3 /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/front-page.php(33): get_template_part('template-parts/...', 'intro')
+#4 /srv/www/andrewyamamoto/htdocs/wp-includes/template-loader.php(75): include('/srv/www/andrew...')
+#5 /srv/www/andrewyamamoto/htdocs/wp-blog-header.php(19): require_once('/srv/www/andrew...')
+#6 /srv/www/andrewyamamoto/htdocs/index.php(17): require('/srv/www/andrew...')
+#7 {main}
+  thrown in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-intro.php on line 21
+[02-Sep-2016 03:44:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-intro.php:21
+Stack trace:
+#0 /srv/www/andrewyamamoto/htdocs/wp-includes/template.php(574): require()
+#1 /srv/www/andrewyamamoto/htdocs/wp-includes/template.php(531): load_template('/srv/www/andrew...', false)
+#2 /srv/www/andrewyamamoto/htdocs/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#3 /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/front-page.php(33): get_template_part('template-parts/...', 'intro')
+#4 /srv/www/andrewyamamoto/htdocs/wp-includes/template-loader.php(75): include('/srv/www/andrew...')
+#5 /srv/www/andrewyamamoto/htdocs/wp-blog-header.php(19): require_once('/srv/www/andrew...')
+#6 /srv/www/andrewyamamoto/htdocs/index.php(17): require('/srv/www/andrew...')
+#7 {main}
+  thrown in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-intro.php on line 21
