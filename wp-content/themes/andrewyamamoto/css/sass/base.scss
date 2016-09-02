@@ -66,6 +66,7 @@ h3{
     p{
         margin-bottom:50px;
     }
+
     .item-container{
         opacity:0;
         overflow:auto;
@@ -88,7 +89,11 @@ h3{
             }
         }
         .overlay{
+            -webkit-transition:opacity, .2s;
             transition: opacity, .2s;
+            background:-webkit-linear-gradient(
+                 rgba($black, 0.70),
+                 rgba($black, 0.70));
             background:linear-gradient(
                  rgba($black, 0.70),
                  rgba($black, 0.70));
@@ -104,24 +109,36 @@ h3{
                 top: 50%;
                 left: 50%;
                 margin-top:20px;
-                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                -webkit-transition:margin-top, 0.2s;
                 transition: margin-top, 0.2s;
             }
+
             .info{
                 display:block;
                 width:100%;
                 color:$white;
-                position:absolute;
-                bottom:10px;
+                position:relative;
+                min-height:100%;
+                /* bottom:10px;*/
                 padding:0 25px 10px 25px;
                 color:$blue-logo;
                 .title{
-                    float:left;
                     font-size:18px;
+                    position: absolute;
+                    top:10px;
+                    left:10px;
+                    color:$white;
                 }
                 .date{
-                    float:right;
+                    position: absolute;
+                    bottom:10px;
+                    left:10px;
                 }
+            }
+            .info{
+
             }
         }
         &:hover{
@@ -130,6 +147,51 @@ h3{
             }
         }
     }
+    .modal {
+      text-align: center;
+      padding: 0!important;
+    }
+
+    .modal:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+    .modal{
+        .modal-header{
+            position:absolute;
+            top:0;
+            right:0;
+            z-index:999;
+            border-bottom:0;
+        }
+        .carousel{
+            .carousel-control{
+                background:none;
+                color:$grey-bar;
+            }
+            .carousel-inner{
+                .item{
+                    padding:15px;
+
+                }
+                img{
+                    margin-left:50%;
+                    -webkit-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
 }
 #contact{
     color:$white;

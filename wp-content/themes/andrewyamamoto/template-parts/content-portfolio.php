@@ -61,48 +61,83 @@
     						$date = get_sub_field('item_year');
                             $img = get_sub_field('item_image');
                             $url = get_sub_field('item_url');
+                            $tmbs = get_sub_field('item_images');
 
     						// display a sub field value
     			?>
-    					<?php if (!$count): ?>
 
                     	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-            			<?php else:?>
 
-    					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-
-    					<?php endif; ?>
 
     					<?php $count++;?>
                         <?php if($url): ?>
-                        <a href=<?php echo $url; ?> class='item-container' target="_blank">
-                            <div class="overlay">
-                                <span><i class='fa fa-search'></i></span>
-                                <div class="info">
-                                    <div class='title'><?php echo $title; ?></div>
-                                    <div class='date'><?php echo $date; ?></div>
+                            <a href=<?php echo $url; ?> class='item-container' target="_blank">
+                                <div class="overlay">
+                                    <span><i class='fa fa-search'></i></span>
+                                    <div class="info">
+                                        <div class='title'><?php echo $title; ?></div>
+                                        <div class='date'><?php echo $date; ?></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src=<?php echo $img; ?> alt="<?php echo $title; ?>" class='img-responsive'/>
-    					</a>
-
+                                <img src=<?php echo $img; ?> alt="<?php echo $title; ?>" class='img-responsive'/>
+        					</a>
                         <?php else: ?>
+                        <?php endif; ?>
+                        <?php if(!$url): ?>
 
-                        <div class='item-container'>
-                            <div class="overlay">
-                                <span><i class='fa fa-search'></i></span>
-                                <div class="info">
-                                    <div class='title'><?php echo $title; ?></div>
-                                    <div class='date'><?php echo $date; ?></div>
+                                <a href="#" class='item-container thumbs' data-toggle="modal" data-target=".modal<?php echo $count; ?>">
+                                    <div class="overlay">
+                                        <span><i class='fa fa-search'></i></span>
+                                        <div class="info">
+                                            <div class='title'><?php echo $title; ?></div>
+                                            <div class='date'><?php echo $date; ?></div>
+                                        </div>
+                                    </div>
+                                    <img src=<?php echo $img; ?> alt="<?php echo $title; ?>" class='img-responsive'/>
+            					</a>
+
+                                <div class="modal fade <?php echo "modal".$count; ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div id=<?php echo "car" . $count; ?> class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img class="img-responsive" src="<?php echo $img; ?>" alt="...">
+                                                    </div>
+                                                    <?php
+                                                        $thumb_count = 1;
+                                                        while ( have_rows('item_images') ) : the_row();
+                                                            $tmb_url = get_sub_field('img');
+                                                    ?>
+                                                            <div class="item <?php echo $init; ?>">
+                                                                <img class="img-responsive" src="<?php echo $tmb_url; ?>" alt="...">
+                                                            </div>
+                                                    <?php
+                                                        $thumb_count++;
+                                                        endwhile;
+                                                    ?>
+
+                                                </div>
+                                                <?php if($thumb_count >=2): ?>
+                                                    <a class="left carousel-control" href=<?php echo "#car" . $count; ?> role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    </a>
+                                                    <a class="right carousel-control" href=<?php echo "#car" . $count; ?> role="button" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    </a>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src=<?php echo $img; ?> alt="<?php echo $title; ?>" class='img-responsive'/>
-    					</div>
+
                         <?php endif; ?>
 
-
-    				</div>
+    				    </div>
     		<?php
     			endwhile;
 

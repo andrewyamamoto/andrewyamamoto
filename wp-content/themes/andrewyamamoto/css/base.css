@@ -71,7 +71,9 @@ h3 {
     #portfolio .item-container:hover > img {
       background-position: -20px; }
     #portfolio .item-container .overlay {
+      -webkit-transition: opacity, .2s;
       transition: opacity, .2s;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
       position: absolute;
       top: 0;
@@ -85,21 +87,57 @@ h3 {
         top: 50%;
         left: 50%;
         margin-top: 20px;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        -webkit-transition: margin-top, 0.2s;
         transition: margin-top, 0.2s; }
       #portfolio .item-container .overlay .info {
         display: block;
         width: 100%;
         color: #FFF;
-        position: absolute;
-        bottom: 10px;
+        position: relative;
+        min-height: 100%;
+        /* bottom:10px;*/
         padding: 0 25px 10px 25px;
         color: #2d96d2; }
         #portfolio .item-container .overlay .info .title {
-          float: left;
-          font-size: 18px; }
+          font-size: 18px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          color: #FFF; }
         #portfolio .item-container .overlay .info .date {
-          float: right; }
+          position: absolute;
+          bottom: 10px;
+          left: 10px; }
+  #portfolio .modal {
+    text-align: center;
+    padding: 0 !important; }
+  #portfolio .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; }
+  #portfolio .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; }
+  #portfolio .modal .modal-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 0; }
+  #portfolio .modal .carousel .carousel-control {
+    background: none;
+    color: #4c4d4e; }
+  #portfolio .modal .carousel .carousel-inner .item {
+    padding: 15px; }
+  #portfolio .modal .carousel .carousel-inner img {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
 
 #contact {
   color: #FFF; }
