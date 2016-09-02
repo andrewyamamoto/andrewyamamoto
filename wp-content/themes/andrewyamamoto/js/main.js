@@ -54,9 +54,7 @@ $(document).ready(function(){
                 function (){ $(this).removeClass('animated wobble'); }
             );
         });
-    };
+    }
     wobbleicons();
-
-
 
 });

@@ -161,3 +161,5 @@ Stack trace:
 [02-Sep-2016 22:49:45 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
 [02-Sep-2016 22:50:11 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
 [02-Sep-2016 22:50:11 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[02-Sep-2016 23:02:58 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[02-Sep-2016 23:03:15 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
