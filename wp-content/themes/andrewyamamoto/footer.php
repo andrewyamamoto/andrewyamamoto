@@ -26,7 +26,7 @@
             <div class="col-lg-2 social-icons">
                 <h2>Social</h2>
                 <a href="https://www.facebook.com/digital80" target="_blank"><i class='social fa fa-facebook-square'></i></a>
-                <a href="https://www.instagram.com/andrew.hideki/" target="_blank"><i class='social fa fa-instagram'></i></a>
+                <a href="https://www.instagram.com/_and_roo_/" target="_blank"><i class='social fa fa-instagram'></i></a>
                 <a href="https://twitter.com/andrew_yamamoto" target="_blank"><i class='social fa fa-twitter-square'></i></a>
                 <a href="https://www.linkedin.com/in/andrew-yamamoto-8941944" target="_blank"><i class='social fa fa-linkedin-square'></i></a>
             </div>
