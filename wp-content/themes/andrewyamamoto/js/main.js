@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    console.log('test');
     var skill_wp, portfolio_wp; //base_image scale
 
     skill_wp = $('#skills').waypoint({

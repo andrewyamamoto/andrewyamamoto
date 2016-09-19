@@ -204,3 +204,16 @@ Stack trace:
 [19-Sep-2016 17:39:39 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
 [19-Sep-2016 17:39:44 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
 [19-Sep-2016 17:40:01 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:41:34 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:41:41 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:41:49 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:42:03 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:42:39 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:43:27 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:43:36 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:44:29 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:44:31 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:44:33 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:44:36 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:45:26 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
+[19-Sep-2016 17:45:29 UTC] PHP Notice:  Undefined variable: init in /srv/www/andrewyamamoto/htdocs/wp-content/themes/andrewyamamoto/template-parts/content-portfolio.php on line 116
