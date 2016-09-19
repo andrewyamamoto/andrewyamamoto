@@ -19,9 +19,9 @@
             </div>
             <div class="col-lg-2">
                 <h2>Navigation</h2>
-                <p>
-                    About  |  Portfolio  |  Skills
-                </p>
+                <?php
+                    wp_nav_menu( array( 'theme_location' => 'footer','menu_id' => 'footer-menu') );
+                ?>
             </div>
             <div class="col-lg-2 social-icons">
                 <h2>Social</h2>
@@ -43,7 +43,7 @@
     </div>
 </section>
 
-<?php wp_footer(); ?>
+<?php //wp_footer(); ?>
 
 </body>
 </html>
